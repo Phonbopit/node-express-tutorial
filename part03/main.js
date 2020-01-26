@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 // ❌แบบไม่ใส่ option
 // fs.readFile('data.txt', (error, data) => {
@@ -54,3 +55,16 @@ const fs = require('fs');
 fs.appendFile('hello2.txt', 'Ahoy Node.js\n', 'utf8', (error, data) => {
   console.log('file saved');
 });
+
+console.log('dir', __dirname);
+console.log('file', __filename);
+
+// ✅ เขียนไฟล์ร่วมกับ path.join()
+fs.appendFile(
+  path.join(__dirname, 'hello2.txt'),
+  'Ahoy Node.js\n',
+  'utf8',
+  (error, data) => {
+    console.log('file saved');
+  }
+);
