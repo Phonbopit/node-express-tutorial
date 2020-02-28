@@ -11,4 +11,6 @@ app.get('/', function(req, res) {
 });
 
 // 4. listen() เป็น function คล้ายๆ http module เพื่อเอาไว้ระบุว่า server จะรัน ด้วย port อะไร
-app.listen(3000);
+app.listen(3000, error => {
+  console.log(error);
+});
