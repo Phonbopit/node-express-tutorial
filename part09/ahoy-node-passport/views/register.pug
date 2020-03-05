@@ -1,0 +1,22 @@
+extend layout
+
+block content
+  .form-container
+    form(class="form-signin" method="POST" action="/auth/register")
+      h2 Please Register
+
+      .form-group
+        label( for="name" class="sr-only") Name (Optional)
+        input(type="text" name="name" id="name" class="form-control" placeholder="Name")
+
+      .form-group
+        label( for="username" class="sr-only") Username
+        input(type="text" name="username" id="username" class="form-control" placeholder="Username" required)
+
+      .form-group
+        label(for="password" class="sr-only") Password
+        input(type="password" name="password" id="password" class="form-control" placeholder="Password" required)
+
+      button(class="btn btn-primary btn-block" type="submit") Register
+
+      a(href="/login", class="btn btn-link") Have an account?
