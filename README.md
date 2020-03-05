@@ -12,6 +12,7 @@
 * [ตอนที่ 6 - เริ่มต้นกับ MongoDB](https://devahoy.com/blog/2020/02/web-development-with-nodejs-mongodb-part6/)
 * [ตอนที่ 7 - ทำ Backend API ด้วย Node.js และ MongoDB กันดีกว่า](https://devahoy.com/blog/2015/07/getting-started-with-nodejs/)
 * [ตอนที่ 8 - Express Generator / Middleware](https://devahoy.com/blog/2020/02/web-development-with-nodejs-mongodb-part8/)
+* [ตอนที่ 9 - ทำระบบ Login ด้วย Passport.js](https://devahoy.com/blog/2020/03/web-development-with-nodejs-mongodb-part9/)
 
 ## Source Code
 
@@ -20,3 +21,4 @@
 - [ตอนที่ 5](/part05)
 - [ตอนที่ 7](https://github.com/Phonbopit/restful-api-nodejs)
 - [ตอนที่ 8](/part08)
+- [ตอนที่ 9](/part09)

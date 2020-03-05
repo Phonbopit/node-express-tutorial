@@ -1,0 +1,21 @@
+extend layout
+
+block content
+  .form-container
+    form(class="form-signin" method="POST" action="/auth/login")
+      h2 Please Login
+
+      .form-group
+        label( for="username" class="sr-only") Username
+        input(type="text" name="username" id="username" class="form-control" placeholder="Username" required)
+
+      .form-group
+        label(for="password" class="sr-only") Password
+        input(type="password" name="password" id="password" class="form-control" placeholder="Password" required)
+
+      button(class="btn btn-primary btn-block" type="submit") Login
+
+      if message
+        .alert.alert-danger #{message}
+
+      a(href="/register", class="btn btn-link") Don't have an account?
